@@ -1,0 +1,22 @@
+title: Contact us
+desc: Contact the Isharvam Villas team by phone, email or WhatsApp. We are available from 10:00 AM to 7:00 PM.
+nav: contact
+css: about
+scripts: info
+---
+<section class="page-head atm-day"><div class="container"><ul class="crumbs"><li><a href="index.html">Home</a></li><li>Contact</li></ul>
+  <p class="eyebrow">Contact</p><h1>Let's plan your <em>stay.</em></h1><p class="lead">Call, email or message us on WhatsApp. The team is available from <span data-fill="hours"></span>.</p></div></section>
+<section class="section--tight atm-day"><div class="container contact">
+  <div class="contact__info"><div id="c-details"></div>
+    <div class="conf__cta"><a class="btn btn--wa" data-wa href="#">{{arrow}}<svg class="icon"><use href="#i-whatsapp"/></svg>WhatsApp us</a><a class="btn btn--ghost" data-fill="instagram" href="#"><svg class="icon"><use href="#i-instagram"/></svg>Instagram</a></div>
+    <div class="mapph"><svg viewBox="0 0 120 120" aria-hidden="true"><path d="M60 12 L4 58 H16 L60 22 L104 58 H116 Z"/><rect x="47" y="46" width="26" height="64"/></svg><p><b>Find us</b></p><p class="small">The address and map will appear here once the business confirms them.</p></div></div>
+  <div class="contact__form" id="c-form-wrap"><h2 class="h3">Send a message</h2>
+    <form id="contact-form" novalidate class="form-grid form-grid--2">
+      <div class="field"><label for="c-name">Name</label><input class="input" id="c-name" name="name" autocomplete="name" data-rules="required"></div>
+      <div class="field"><label for="c-phone">Mobile number</label><input class="input" id="c-phone" name="phone" type="tel" autocomplete="tel" data-rules="required,phone"></div>
+      <div class="field"><label for="c-email">Email <span class="muted">(optional)</span></label><input class="input" id="c-email" name="email" type="email" autocomplete="email" data-rules="email"></div>
+      <div class="field"><label for="c-topic">Topic</label><select class="input" id="c-topic" name="topic"><option>Booking enquiry</option><option>Existing booking</option><option>Experiences</option><option>Something else</option></select></div>
+      <div class="field full"><label for="c-msg">Message</label><textarea class="input" id="c-msg" name="message" data-rules="required" placeholder="Tell us your dates, group size and what you have in mind"></textarea></div>
+      <button class="btn btn--lg full" type="submit">Send message {{arrow}}</button>
+    </form></div>
+</div></section>

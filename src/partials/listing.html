@@ -1,0 +1,36 @@
+<section class="section--tight atm-day listing" aria-label="Villa listings">
+  <div class="container">
+    <form class="bookbar bookbar--light" id="listing-bar" data-bookbar data-no-submit="1" aria-label="Refine your stay">
+      <div class="bookbar__field"><label for="lb-loc">Where</label><select id="lb-loc" name="loc"><option value="">All locations</option></select></div>
+      <div class="bookbar__field"><button type="button" class="bookbar__btn" data-dates aria-haspopup="dialog" aria-expanded="false"><span class="bookbar__lbl">Check-in</span><span class="val" data-in>Add date</span></button></div>
+      <div class="bookbar__field"><button type="button" class="bookbar__btn" data-dates aria-haspopup="dialog" aria-expanded="false"><span class="bookbar__lbl">Check-out</span><span class="val" data-out>Add date</span></button></div>
+      <div class="bookbar__field"><button type="button" class="bookbar__btn" data-guests><span class="bookbar__lbl">Guests</span><span class="val">2 guests</span></button></div>
+      <div class="bookbar__field bookbar__submit"><button class="btn btn--primary" type="submit">Update results</button></div>
+      <input type="hidden" name="in"><input type="hidden" name="out"><input type="hidden" name="g" value="2">
+    </form>
+    <div class="listing__layout">
+      <aside class="filters" id="filters" aria-label="Filters">
+        <div class="filters__head"><h2 class="h3">Filters</h2><button type="button" class="icon-btn" data-filters-close aria-label="Close filters"><svg class="icon"><use href="#i-x"/></svg></button></div>
+        <div id="filters-body"></div>
+        <button type="button" class="btn btn--primary btn--block filters__apply" data-filters-close>Show <span id="f-count">0</span> villas</button>
+      </aside>
+      <div class="filters__scrim" data-filters-close></div>
+      <div class="results">
+        <div class="results__bar">
+          <p id="count" role="status" aria-live="polite"></p>
+          <div class="results__tools"><button type="button" id="filters-open" class="btn btn--ghost btn--sm" aria-expanded="false" aria-controls="filters"><svg class="icon"><use href="#i-sliders-horizontal"/></svg>Filters</button>
+            <div class="field field--inline"><label for="sort">Sort by</label><select id="sort" class="input"><option value="rec">Recommended</option><option value="pa">Price: low to high</option><option value="pd">Price: high to low</option><option value="g">Most guests</option><option value="b">Most bedrooms</option></select></div></div>
+        </div>
+        <div class="chips" id="pills" aria-label="Active filters"></div>
+        <div class="vgrid" id="results" aria-busy="true"></div>
+        <div class="empty" id="empty" hidden>
+          <h2 class="h3">No villas match just yet.</h2><p class="muted">Try different dates, fewer filters, or ask our team. We may be able to suggest an alternative.</p>
+          <div class="empty__cta"><button type="button" class="btn js-reset-all">Clear everything</button><a class="btn btn--ghost" data-wa="Hello Isharvam Villas, I could not find a villa for my dates. Could you help?" href="#"><svg class="icon"><use href="#i-whatsapp"/></svg>Ask on WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="tray" id="tray" hidden role="region" aria-label="Villa comparison">
+  <div class="container tray__in"><ul id="tray-items" class="tray__items"></ul><div class="tray__act"><button type="button" class="btn btn--text" id="tray-clear">Clear</button><button type="button" class="btn btn--light btn--sm" id="tray-go">Compare</button></div></div>
+</div>

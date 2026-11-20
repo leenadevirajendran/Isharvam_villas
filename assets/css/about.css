@@ -1,0 +1,9 @@
+/* ISHARVAM VILLAS: about, experiences, contact, FAQ, legal, 404 */
+.ab-grid { display: grid; gap: 2.5rem; align-items: center; } @media (min-width: 900px) { .ab-grid { grid-template-columns: 1fr 1fr; gap: 5rem; } } .ab-img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.how { display: grid; gap: 2rem; counter-reset: h; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); } .how > * { counter-increment: h; border-top: 1px solid var(--hair); padding-top: 1.2rem; } .how > *::before { content: '0' counter(h); font: 500 2.4rem/1 var(--serif); color: var(--orn); display: block; margin-bottom: .6rem; }
+.xrow { display: grid; gap: 1.5rem; align-items: center; padding-block: clamp(1.5rem, 3vw, 2.5rem); border-top: 1px solid var(--hair); } @media (min-width: 860px) { .xrow { grid-template-columns: 1fr 1fr; gap: 4rem; } .xrow--flip .xrow__img { order: 2; } } .xrow__img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; } .xrow__txt { display: grid; gap: .8rem; }
+.amen-dir { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.contact { display: grid; gap: 3rem; padding-block: 2rem clamp(3rem, 6vw, 6rem); } @media (min-width: 900px) { .contact { grid-template-columns: 1fr 1.2fr; gap: 5rem; } } .contact__info, .contact__form { display: grid; gap: 1.2rem; align-content: start; } .contact__form { border: 1px solid var(--line); background: #fff; padding: clamp(1.25rem, 3vw, 2.2rem); }
+.clist { display: grid; gap: 1rem; } .clist li { display: flex; gap: .9rem; align-items: flex-start; padding-bottom: 1rem; border-bottom: 1px solid var(--hair); } .clist .icon { color: var(--orn); margin-top: .2rem; }
+.faq-tools { display: grid; gap: 1rem; margin-bottom: 2rem; }
+.page-404 { min-height: 80vh; display: grid; place-items: center; text-align: center; padding: 8rem var(--gutter) 4rem; } .page-404 h1 { font-size: clamp(5rem, 16vw, 11rem); line-height: .9; color: var(--orn); }

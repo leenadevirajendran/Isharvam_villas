@@ -1,0 +1,13 @@
+title: Villa details
+nav: villas
+---
+<p><a class="link-arrow" href="villas.html">Back to villas</a></p><h2 id="vtitle" class="sr-only">Villa</h2>
+<form class="panel a-form" id="vf" novalidate><div class="row"><div class="field"><label for="f-name">Villa name</label><input class="input" id="f-name" name="name" data-rules="required"></div><div class="field"><label for="f-tag">Tagline</label><input class="input" id="f-tag" name="tagline" data-rules="required"></div></div>
+<div class="row"><div class="field"><label for="f-loc">Location</label><select class="input" id="f-loc" name="locationId"></select></div><div class="field"><label for="f-cat">Category</label><select class="input" id="f-cat" name="category"></select></div></div>
+<div class="row"><div class="field"><label for="f-bd">Bedrooms</label><input class="input" id="f-bd" name="bedrooms" type="number" min="1" max="20" data-rules="required"></div><div class="field"><label for="f-ba">Bathrooms</label><input class="input" id="f-ba" name="bathrooms" type="number" min="1" max="20" data-rules="required"></div><div class="field"><label for="f-g">Max guests</label><input class="input" id="f-g" name="maxGuests" type="number" min="1" max="40" data-rules="required"></div><div class="field"><label for="f-p">Rate per night (INR)</label><input class="input" id="f-p" name="pricePerNight" type="number" min="1000" step="500" data-rules="required"></div></div>
+<div class="field"><label for="f-d">Description (separate paragraphs with a blank line)</label><textarea class="input" id="f-d" name="description" rows="7" data-rules="required"></textarea></div>
+<div class="field"><label for="f-h">Highlights (one per line)</label><textarea class="input" id="f-h" name="highlights" rows="4"></textarea></div>
+<div><h3 class="eyebrow" style="margin-bottom:.8rem">Amenities</h3><div id="amen" class="a-form"></div></div>
+<div><h3 class="eyebrow" style="margin-bottom:.8rem">Photos</h3><div id="imgs"></div></div>
+<div class="a-row"><button class="btn btn--ghost" id="del" type="button">Set to draft</button><button class="btn btn--primary" type="submit">Save changes</button></div>
+<p class="muted">Changes are saved in this browser only and do not alter the public pages.</p></form>

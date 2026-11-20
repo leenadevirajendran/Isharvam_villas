@@ -1,0 +1,15 @@
+title: My bookings
+desc: Follow your Isharvam Villas booking requests and their status.
+nav: bookings
+css: checkout
+scripts: mybookings
+robots: noindex
+---
+<section class="page-head page-head--sm atm-day"><div class="container"><ul class="crumbs"><li><a href="index.html">Home</a></li><li>My bookings</li></ul>
+  <p class="eyebrow">Your stays</p><h1 id="bk-greet">My <em>bookings</em></h1>
+  <p class="lead">Requests you send from this device appear here. Status updates such as Confirmed and Paid are made by our team after your WhatsApp conversation.</p>
+  <div class="bk-actions"><a class="btn btn--ghost btn--sm" id="bk-login" href="login.html">Log in</a><button class="btn btn--ghost btn--sm" id="bk-logout" type="button" hidden>Log out</button><a class="btn btn--sm" href="villas.html">Find a villa</a></div></div></section>
+<section class="section--tight atm-day"><div class="container">
+  <div class="tabs" id="bk-tabs" role="tablist" aria-label="Booking filters"><button role="tab" data-t="up" aria-selected="true">Upcoming <b>0</b></button><button role="tab" data-t="past" aria-selected="false">Past <b>0</b></button><button role="tab" data-t="cx" aria-selected="false">Cancelled <b>0</b></button></div>
+  <div class="bk-list" id="bk-list" aria-live="polite"></div>
+</div></section>

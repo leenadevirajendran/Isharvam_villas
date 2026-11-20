@@ -1,0 +1,56 @@
+/* ISHARVAM VILLAS: ambient villa scene (decorative, left to right) */
+.bg-scene { position: fixed; z-index: 0; inset: auto 0 0 0; height: min(46vh, 420px); pointer-events: none; color: var(--navy); overflow: hidden; -webkit-mask-image: linear-gradient(0deg, #000 55%, transparent); mask-image: linear-gradient(0deg, #000 55%, transparent); }
+.bg-scene__sky { position: absolute; inset: 0; }
+.bg-scene__street { position: absolute; left: 0; right: 0; bottom: 0; opacity: .2; }
+.amb-track { display: flex; width: max-content; animation: amb-pan 140s linear infinite; will-change: transform; }
+.amb-tile { flex: none; display: block; }
+@keyframes amb-pan { from { transform: translate3d(-50%, 0, 0); } to { transform: translate3d(0, 0, 0); } }
+.amb-w { fill: var(--lamp); stroke: none; opacity: .15; animation: amb-lit 9s ease-in-out infinite; }
+.amb-w2 { animation: amb-lit 6s ease-in-out infinite; opacity: .25; }
+@keyframes amb-lit { 0%, 100% { opacity: .1; } 50% { opacity: .95; } }
+.amb-cloud { position: absolute; left: 0; width: 120px; color: var(--navy); opacity: .22; animation: amb-drift linear infinite; will-change: transform; }
+.amb-cloud:nth-child(1) { top: 8%; animation-duration: 110s; animation-delay: -30s; }
+.amb-cloud:nth-child(2) { top: 26%; width: 84px; animation-duration: 150s; animation-delay: -90s; opacity: .16; }
+.amb-cloud:nth-child(3) { top: 14%; width: 150px; animation-duration: 190s; animation-delay: -150s; opacity: .12; }
+@keyframes amb-drift { from { transform: translate3d(-200px, 0, 0); } to { transform: translate3d(calc(100vw + 200px), 0, 0); } }
+.amb-bird { position: absolute; left: 0; top: 18%; color: var(--navy); opacity: .45; animation: amb-fly 46s linear infinite -12s; will-change: transform; }
+.amb-bird svg { display: block; animation: amb-bob 3.2s ease-in-out infinite; overflow: visible; }
+.amb-wl, .amb-wr { transform-box: fill-box; transform-origin: 50% 100%; animation: amb-flap .55s ease-in-out infinite alternate; }
+.amb-wr { animation-name: amb-flap-r; }
+@keyframes amb-fly { from { transform: translate3d(-80px, 0, 0); } to { transform: translate3d(calc(100vw + 80px), -30px, 0); } }
+@keyframes amb-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes amb-flap { from { transform: rotate(14deg); } to { transform: rotate(-16deg); } }
+@keyframes amb-flap-r { from { transform: rotate(-14deg); } to { transform: rotate(16deg); } }
+
+/* inner pages let the scene show through plain sections */
+body.has-amb { background: linear-gradient(180deg, var(--ivory) 0%, #F2EEE4 100%) fixed; }
+body.has-amb main, body.has-amb .site-footer { position: relative; z-index: 1; }
+body.has-amb .atm-day:not(.page-head) { background: transparent; }
+body.has-amb .section--tint { background: rgba(237, 233, 223, .6); }
+
+/* header band */
+.page-head > .container { position: relative; z-index: 2; }
+.amb-head { position: absolute; left: 0; right: 0; bottom: 0; height: 120px; overflow: hidden; pointer-events: none; z-index: 1; color: #F7F5F0; opacity: .28; display: flex; align-items: flex-end; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+.amb-head .amb-tile { height: 120px; width: auto; }
+.amb-head .amb-track { animation-duration: 100s; }
+.amb-head .amb-w { opacity: .35; }
+.page-head.atm-day .amb-head, .page-head:not(.atm-night):not(.on-dark) .amb-head { color: var(--navy); opacity: .16; }
+.has-amb-head .page-head__roof { display: none; } .page-head.has-amb-head { padding-bottom: clamp(5.5rem, 9vw, 7.5rem); }
+@media (max-width: 760px) { .amb-head, .amb-head .amb-tile { height: 84px; } .bg-scene { height: 32vh; } }
+@media (prefers-reduced-motion: reduce) { .amb-w, .amb-w2, .amb-track, .amb-cloud, .amb-bird, .amb-bird svg, .amb-wl, .amb-wr, { animation: none !important; } .amb-cloud:nth-child(1) { transform: translateX(18vw); } .amb-cloud:nth-child(2) { transform: translateX(60vw); } .amb-cloud:nth-child(3) { transform: translateX(80vw); } .amb-bird { transform: translateX(40vw); } }
+
+/* readable panels: text never sits directly on the moving scene */
+body.has-amb :is(main, .villa) > section:not(.page-head):not(.wake):not(.atm-night):not(.atm-dusk):not(.atm-golden) { padding-block: clamp(.6rem, 1.4vw, 1.1rem); background: transparent; }
+body.has-amb :is(main, .villa) > section:not(.page-head):not(.wake):not(.atm-night):not(.atm-dusk):not(.atm-golden) > .container { background: rgba(250, 248, 243, .96); border-radius: 10px; padding-block: clamp(1.75rem, 3.5vw, 3rem); box-shadow: 0 1px 0 rgba(16, 33, 61, .06), 0 24px 48px -32px rgba(16, 33, 61, .28); max-width: min(calc(var(--maxw) + var(--gutter) * 2), calc(100% - 1rem)); }
+body.has-amb .page-head .container, body.has-amb .site-footer .container { background: none; box-shadow: none; }
+body.has-amb .villa > .vbody { padding-block: clamp(.6rem, 1.4vw, 1.1rem); background: transparent; }
+body.has-amb .villa > .vbody > .container { background: rgba(250, 248, 243, .96); border-radius: 10px; padding-block: clamp(1.75rem, 3.5vw, 3rem); box-shadow: 0 1px 0 rgba(16, 33, 61, .06), 0 24px 48px -32px rgba(16, 33, 61, .28); max-width: min(calc(var(--maxw) + var(--gutter) * 2), calc(100% - 1rem)); }
+
+.bg-scene__street { opacity: .38; } .amb-cloud { opacity: .4; } .amb-cloud:nth-child(2) { opacity: .3; } .amb-cloud:nth-child(3) { opacity: .26; } .amb-bird { opacity: .6; }
+body.has-amb :is(main, .villa) > section:not(.page-head):not(.wake):not(.atm-night):not(.atm-dusk):not(.atm-golden) { padding-block: 0; }
+body.has-amb .villa > .vbody { padding-block: 0; }
+body.has-amb :is(main, .villa) > section:not(.page-head):not(.wake):not(.atm-night):not(.atm-dusk):not(.atm-golden):first-of-type { margin-top: .75rem; }
+@media (prefers-reduced-motion: reduce) { .amb-divider .amb-track { animation: none !important; } }
+
+body.has-amb { overflow-x: clip; }
+

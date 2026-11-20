@@ -1,0 +1,22 @@
+title: Create account
+desc: Create an Isharvam Villas guest account to keep track of your booking requests.
+nav: account
+css: auth
+scripts: auth
+robots: noindex
+---
+<section class="auth atm-day"><div class="auth__art on-dark"><img src="assets/img/site/scene-dusk.webp" alt="" loading="eager"><div class="auth__quote"><p class="serif">“Every stay begins with a conversation.”</p></div></div>
+<div class="auth__form"><div class="auth__in"><a class="brand" href="index.html" aria-label="Isharvam Villas home">{{logo}}<span class="brand__word"><b>ISHARVAM</b><small>VILLAS</small></span></a>
+  <h1 class="h1">Create your <em>account.</em></h1><p class="muted">One place for your requests, confirmations and conversations.</p>
+  <form id="auth-form" data-mode="register" novalidate class="form-grid form-grid--2">
+    <div class="field full"><label for="a-name">Full name</label><input class="input" id="a-name" name="name" autocomplete="name" data-rules="required" placeholder="Your name"></div>
+    <div class="field"><label for="a-email">Email</label><input class="input" id="a-email" name="email" type="email" autocomplete="email" data-rules="required,email" placeholder="you@example.com"></div>
+    <div class="field"><label for="a-phone">Mobile number</label><input class="input" id="a-phone" name="phone" type="tel" autocomplete="tel" data-rules="required,phone" placeholder="10-digit mobile"></div>
+    <div class="field full"><label for="a-pass">Password</label><div class="pw"><input class="input" id="a-pass" name="password" type="password" autocomplete="new-password" data-rules="required,password" placeholder="8+ characters with a number"><button type="button" class="pw-toggle" data-for="a-pass" aria-pressed="false" aria-label="Show password"><svg class="icon"><use href="#i-lock"/></svg></button></div><div class="meter" id="pw-meter" data-s="0" aria-hidden="true"><i></i><i></i><i></i><i></i></div><p class="field__hint" aria-live="polite"></p></div>
+    <div class="field full"><label for="a-pass2">Confirm password</label><input class="input" id="a-pass2" name="password2" type="password" autocomplete="new-password" data-rules="required,match" data-match="password" placeholder="Repeat your password"></div>
+    <label class="check full"><input type="checkbox" name="terms" data-rules="required"><span>I agree to the <a href="terms.html" target="_blank" rel="noopener" style="text-decoration:underline">terms</a> and <a href="privacy.html" target="_blank" rel="noopener" style="text-decoration:underline">privacy policy</a>.</span></label>
+    <div id="auth-msg" class="full" role="status" hidden></div>
+    <button class="btn btn--lg btn--block full" type="submit">Create account {{arrow}}</button>
+  </form>
+  <p class="small">Already have an account? <a href="login.html" style="text-decoration:underline">Log in</a></p>
+</div></div></section>

@@ -1,0 +1,36 @@
+title: Request your stay
+desc: Review your dates and price, share your details and continue with the Isharvam team on WhatsApp to confirm and pay.
+nav: villas
+css: checkout
+scripts: checkout
+wa: 0
+robots: noindex
+---
+<section class="page-head page-head--sm atm-day"><div class="container">
+  <ul class="crumbs"><li><a href="villas.html">Villas</a></li><li>Request your stay</li></ul>
+  <h1 id="co-title">Request your <em>stay</em></h1>
+  <ol class="steps" aria-label="Booking steps"><li class="is-cur"><span>1</span>Your details</li><li><span>2</span>Continue on WhatsApp</li><li><span>3</span>Team confirms &amp; arranges payment</li></ol>
+</div></section>
+<section class="section--tight atm-day"><div class="container checkout">
+  <form id="co-form" class="co-main" novalidate>
+    <div class="notice"><svg class="icon"><use href="#i-info"/></svg><span><b>No payment on the website.</b> Send your request and our team will confirm availability and arrange payment with you on WhatsApp.</span></div>
+    <fieldset class="co-block"><legend class="h3">Your stay</legend>
+      <div class="co-stay"><button type="button" class="bc-f" data-bc="in"><span class="bookbar__lbl">Check-in</span><span class="val" id="co-in">Add date</span></button><button type="button" class="bc-f" data-bc="out"><span class="bookbar__lbl">Check-out</span><span class="val" id="co-out">Add date</span></button><div class="bc-f"><button type="button" id="co-g" data-guests class="bookbar__btn"><span class="bookbar__lbl">Guests</span><span class="val">2 guests</span></button></div></div>
+      <p class="field__err" id="co-err" role="alert"></p>
+    </fieldset>
+    <fieldset class="co-block"><legend class="h3">Your details</legend>
+      <div class="form-grid form-grid--2">
+        <div class="field full"><label for="f-name">Full name</label><input class="input" id="f-name" name="name" autocomplete="name" data-rules="required" placeholder="As on your ID"></div>
+        <div class="field"><label for="f-phone">Mobile number</label><input class="input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" data-rules="required,phone" placeholder="10-digit mobile"></div>
+        <div class="field"><label for="f-email">Email</label><input class="input" id="f-email" name="email" type="email" autocomplete="email" data-rules="required,email" placeholder="you@example.com"></div>
+        <div class="field full"><label for="f-notes">Special requests <span class="muted">(optional)</span></label><textarea class="input" id="f-notes" name="notes" placeholder="Arrival time, celebrations, dietary needs, anything we should know"></textarea></div>
+      </div>
+    </fieldset>
+    <fieldset class="co-block"><legend class="h3">What happens next</legend>
+      <ol class="next"><li><b>You send this request.</b> Your dates are noted by our team.</li><li><b>We continue on WhatsApp.</b> The next page opens a chat with your booking details ready to send.</li><li><b>We confirm and arrange payment.</b> Your stay is confirmed only after our team replies. Working hours: <span data-fill="hours"></span>.</li></ol>
+    </fieldset>
+    <label class="check"><input type="checkbox" name="terms" data-rules="required"><span>I agree to the <a href="terms.html" target="_blank" rel="noopener" style="text-decoration:underline">terms</a>, <a href="privacy.html" target="_blank" rel="noopener" style="text-decoration:underline">privacy policy</a> and <a href="cancellation.html" target="_blank" rel="noopener" style="text-decoration:underline">cancellation policy</a>.</span></label>
+    <button class="btn btn--lg" type="submit">Send request &amp; continue on WhatsApp {{arrow}}</button>
+  </form>
+  <aside id="co-summary" class="co-sum" aria-label="Booking summary"></aside>
+</div></section>

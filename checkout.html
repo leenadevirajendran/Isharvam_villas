@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" class="no-js" data-root="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request your stay | Isharvam Villas</title>
+<meta name="description" content="Review your dates and price, share your details and continue with the Isharvam team on WhatsApp to confirm and pay.">
+<meta name="theme-color" content="#10213D">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Request your stay | Isharvam Villas">
+<meta property="og:description" content="Review your dates and price, share your details and continue with the Isharvam team on WhatsApp to confirm and pay.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/site/hero-sm.webp">
+<link rel="preconnect" href="https://images.pexels.com" crossorigin>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/ambient.css">
+<link rel="stylesheet" href="assets/css/checkout.css">
+
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+</head>
+<body class="no-wa" data-nav="villas">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="Isharvam Villas, home"><svg class="brand__mark" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect class="m" x="19" y="18" width="10" height="26"/><polygon class="m" points="4,58 60,12 116,58 104,58 60,22 16,58"/><rect class="m" x="47" y="46" width="26" height="64" rx="2"/><rect class="w" x="54" y="58" width="12" height="14"/></svg><span class="brand__word"><b>ISHARVAM</b><small>VILLAS</small></span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="villas.html" data-nav-link="villas">Villas</a>
+      <a href="experiences.html" data-nav-link="experiences">Experiences</a>
+      <a href="about.html" data-nav-link="about">About</a>
+      <a href="my-bookings.html" data-nav-link="bookings">My bookings</a>
+      <a href="contact.html" data-nav-link="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="icon-btn" data-wa href="#" aria-label="Chat with us on WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
+      <a class="icon-btn" href="login.html" aria-label="Log in"><svg class="icon"><use href="#i-user"/></svg></a>
+      <a class="btn btn--light btn--sm" href="villas.html">Check availability</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="bars"></span></button>
+    </div>
+  </div>
+</header>
+<div id="mobile-menu" class="mobile-menu" hidden>
+  <nav aria-label="Mobile">
+    <a href="villas.html" data-nav-link="villas">Villas</a>
+    <a href="experiences.html" data-nav-link="experiences">Experiences</a>
+    <a href="about.html" data-nav-link="about">About</a>
+    <a href="my-bookings.html" data-nav-link="bookings">My bookings</a>
+    <a href="contact.html" data-nav-link="contact">Contact</a>
+    <a href="login.html">Log in</a>
+  </nav>
+  <div class="mobile-menu__foot"><a data-wa href="#"><svg class="icon"><use href="#i-whatsapp"/></svg> Chat on WhatsApp</a><span data-fill="phones"></span><span>Team available <span data-fill="hours"></span></span></div>
+</div>
+<main id="main">
+<section class="page-head page-head--sm atm-day"><div class="container">
+  <ul class="crumbs"><li><a href="villas.html">Villas</a></li><li>Request your stay</li></ul>
+  <h1 id="co-title">Request your <em>stay</em></h1>
+  <ol class="steps" aria-label="Booking steps"><li class="is-cur"><span>1</span>Your details</li><li><span>2</span>Continue on WhatsApp</li><li><span>3</span>Team confirms &amp; arranges payment</li></ol>
+</div></section>
+<section class="section--tight atm-day"><div class="container checkout">
+  <form id="co-form" class="co-main" novalidate>
+    <div class="notice"><svg class="icon"><use href="#i-info"/></svg><span><b>No payment on the website.</b> Send your request and our team will confirm availability and arrange payment with you on WhatsApp.</span></div>
+    <fieldset class="co-block"><legend class="h3">Your stay</legend>
+      <div class="co-stay"><button type="button" class="bc-f" data-bc="in"><span class="bookbar__lbl">Check-in</span><span class="val" id="co-in">Add date</span></button><button type="button" class="bc-f" data-bc="out"><span class="bookbar__lbl">Check-out</span><span class="val" id="co-out">Add date</span></button><div class="bc-f"><button type="button" id="co-g" data-guests class="bookbar__btn"><span class="bookbar__lbl">Guests</span><span class="val">2 guests</span></button></div></div>
+      <p class="field__err" id="co-err" role="alert"></p>
+    </fieldset>
+    <fieldset class="co-block"><legend class="h3">Your details</legend>
+      <div class="form-grid form-grid--2">
+        <div class="field full"><label for="f-name">Full name</label><input class="input" id="f-name" name="name" autocomplete="name" data-rules="required" placeholder="As on your ID"></div>
+        <div class="field"><label for="f-phone">Mobile number</label><input class="input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" data-rules="required,phone" placeholder="10-digit mobile"></div>
+        <div class="field"><label for="f-email">Email</label><input class="input" id="f-email" name="email" type="email" autocomplete="email" data-rules="required,email" placeholder="you@example.com"></div>
+        <div class="field full"><label for="f-notes">Special requests <span class="muted">(optional)</span></label><textarea class="input" id="f-notes" name="notes" placeholder="Arrival time, celebrations, dietary needs, anything we should know"></textarea></div>
+      </div>
+    </fieldset>
+    <fieldset class="co-block"><legend class="h3">What happens next</legend>
+      <ol class="next"><li><b>You send this request.</b> Your dates are noted by our team.</li><li><b>We continue on WhatsApp.</b> The next page opens a chat with your booking details ready to send.</li><li><b>We confirm and arrange payment.</b> Your stay is confirmed only after our team replies. Working hours: <span data-fill="hours"></span>.</li></ol>
+    </fieldset>
+    <label class="check"><input type="checkbox" name="terms" data-rules="required"><span>I agree to the <a href="terms.html" target="_blank" rel="noopener" style="text-decoration:underline">terms</a>, <a href="privacy.html" target="_blank" rel="noopener" style="text-decoration:underline">privacy policy</a> and <a href="cancellation.html" target="_blank" rel="noopener" style="text-decoration:underline">cancellation policy</a>.</span></label>
+    <button class="btn btn--lg" type="submit">Send request &amp; continue on WhatsApp <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+  </form>
+  <aside id="co-summary" class="co-sum" aria-label="Booking summary"></aside>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <svg class="footer__roof" viewBox="0 0 120 120" aria-hidden="true"><polygon fill="#F7F5F0" points="4,58 60,12 116,58 104,58 60,22 16,58"/><rect fill="#F7F5F0" x="19" y="18" width="10" height="26"/><rect fill="#F7F5F0" x="47" y="46" width="26" height="64"/></svg>
+  <div class="container footer__top">
+    <div class="footer__cta">
+      <h2>Your evening <em>starts here.</em></h2>
+      <p>Tell us your dates and the size of your group. Our team will take it from there on WhatsApp.</p>
+      <a class="btn btn--light btn--lg" href="villas.html">Find a villa <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    </div>
+    <div class="footer__cols">
+      <div><h3>Explore</h3><ul><li><a href="villas.html">All villas</a></li><li><a href="experiences.html">Experiences</a></li><li><a href="about.html">About us</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h3>Guests</h3><ul><li><a href="my-bookings.html">My bookings</a></li><li><a href="login.html">Log in</a></li><li><a href="register.html">Create account</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h3>Reach us</h3><p data-fill="phones"></p><p data-fill="email"></p><p data-fill="address"></p><p>Working hours<br><span data-fill="hours"></span></p></div>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <div><p>© <span data-year>2026</span> Isharvam Villas. All rights reserved.</p></div>
+    <nav aria-label="Legal" class="footer__legal" style="display:flex;gap:1.25rem;flex-wrap:wrap"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cancellation.html">Cancellation</a></nav>
+    <div class="footer__social"><a data-fill="instagram" href="#" aria-label="Isharvam Villas on Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a><a data-wa href="#" aria-label="Chat on WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg></a><a href="mailto:isharvam@gmail.com" aria-label="Email us"><svg class="icon"><use href="#i-mail"/></svg></a></div>
+  </div>
+</footer>
+<a class="wa-float" data-wa href="#" aria-label="Chat with us on WhatsApp"><svg class="icon"><use href="#i-whatsapp"/></svg><span>Chat on WhatsApp</span></a>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/photos.js"></script>
+<script src="assets/js/mock-data.js"></script>
+<script src="assets/js/icons.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/calendar.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/ambient.js"></script>
+<script src="assets/js/checkout.js"></script>
+</body>
+</html>

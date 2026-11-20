@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" class="no-js" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reports & settings | Isharvam Villas</title>
+<meta name="description" content="Privately managed luxury villas.">
+<meta name="theme-color" content="#10213D">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Reports & settings | Isharvam Villas">
+<meta property="og:description" content="Privately managed luxury villas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/img/site/hero-sm.webp">
+<link rel="preconnect" href="https://images.pexels.com" crossorigin>
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/newsreader-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<link rel="stylesheet" href="../assets/css/admin.css">
+
+<script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+</head>
+<body class="admin" data-nav="reports">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="admin-shell">
+  <aside class="admin-side" id="admin-side" aria-label="Admin navigation">
+    <a class="brand" href="../admin/index.html" aria-label="Isharvam Villas admin"><svg class="brand__mark" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect class="m" x="19" y="18" width="10" height="26"/><polygon class="m" points="4,58 60,12 116,58 104,58 60,22 16,58"/><rect class="m" x="47" y="46" width="26" height="64" rx="2"/><rect class="w" x="54" y="58" width="12" height="14"/></svg><span class="brand__word"><b>ISHARVAM</b><small>ADMIN</small></span></a>
+    <nav class="admin-nav">
+      <a href="../admin/index.html" data-nav-link="dashboard"><svg class="icon"><use href="#i-layout-grid"/></svg>Dashboard</a>
+      <a href="../admin/villas.html" data-nav-link="villas"><svg class="icon"><use href="#i-house"/></svg>Villas</a>
+      <a href="../admin/gallery.html" data-nav-link="gallery"><svg class="icon"><use href="#i-image"/></svg>Gallery</a>
+      <a href="../admin/pricing.html" data-nav-link="pricing"><svg class="icon"><use href="#i-indian-rupee"/></svg>Pricing</a>
+      <a href="../admin/availability.html" data-nav-link="availability"><svg class="icon"><use href="#i-calendar-days"/></svg>Availability</a>
+      <a href="../admin/bookings.html" data-nav-link="bookings"><svg class="icon"><use href="#i-receipt"/></svg>Bookings</a>
+      <a href="../admin/guests.html" data-nav-link="guests"><svg class="icon"><use href="#i-users"/></svg>Guests</a>
+      <a href="../admin/payments.html" data-nav-link="payments"><svg class="icon"><use href="#i-wallet"/></svg>Payments</a>
+      <a href="../admin/reports.html" data-nav-link="reports"><svg class="icon"><use href="#i-chart-column"/></svg>Reports &amp; settings</a>
+    </nav>
+    <div class="admin-side__foot"><a href="../index.html"><svg class="icon"><use href="#i-external-link"/></svg>View website</a><p>Admin panel. Changes are kept in this browser only.</p></div>
+  </aside>
+  <div class="admin-main">
+    <header class="admin-top">
+      <button class="admin-menu icon-btn" type="button" aria-controls="admin-side" aria-expanded="false" aria-label="Open navigation"><svg class="icon"><use href="#i-menu"/></svg></button>
+      <h1 class="admin-title">Reports & settings</h1>
+      <div class="admin-top__r"><span class="admin-avatar" aria-label="Signed in as admin">AD</span></div>
+    </header>
+    <main id="main" class="admin-content">
+<div class="tabs" role="tablist"><button role="tab" id="t1" aria-selected="true" aria-controls="p1" type="button">Reports</button><button role="tab" id="t2" aria-selected="false" aria-controls="p2" type="button">Settings</button></div>
+<div id="p1" role="tabpanel" aria-labelledby="t1" class="a-grid a-grid--eq"><section class="panel"><div class="panel__head"><h2>Top villas by value</h2><button class="btn btn--ghost btn--sm" id="export" type="button"><svg class="icon"><use href="#i-download"/></svg>Export CSV</button></div><ul class="bars" id="top"></ul></section><section class="panel"><h2>Requests by status</h2><ul class="up" id="st"></ul></section></div>
+<div id="p2" role="tabpanel" aria-labelledby="t2" hidden><form class="panel a-form" id="sf" novalidate><h2>Business settings</h2><div class="row"><div class="field"><label for="s-wa">WhatsApp number (with country code)</label><input class="input" id="s-wa" name="whatsapp" data-rules="required"></div><div class="field"><label for="s-em">Email</label><input class="input" id="s-em" name="email" type="email" data-rules="required,email"></div><div class="field"><label for="s-h">Working hours</label><input class="input" id="s-h" name="hours"></div></div><div class="row"><div class="field"><label for="s-ci">Check-in time</label><input class="input" id="s-ci" name="checkIn"></div><div class="field"><label for="s-co">Check-out time</label><input class="input" id="s-co" name="checkOut"></div><div class="field"><label for="s-cf">Cleaning fee (INR)</label><input class="input" id="s-cf" name="cleaningFee" type="number" min="0"></div><div class="field"><label for="s-tx">Tax rate (%)</label><input class="input" id="s-tx" name="taxRate" type="number" min="0" max="40"></div></div><div class="a-row"><button class="btn btn--primary" type="submit">Save settings</button></div><p class="muted">Saved in this browser. To change the live site values edit <code>assets/js/config.js</code>.</p></form></div>
+    </main>
+  </div>
+</div>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/photos.js"></script>
+<script src="../assets/js/mock-data.js"></script>
+<script src="../assets/js/icons.js"></script>
+<script src="../assets/js/utils.js"></script>
+<script src="../assets/js/admin-core.js"></script>
+</body>
+</html>

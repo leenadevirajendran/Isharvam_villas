@@ -1,0 +1,295 @@
+title: Luxury private villas, one welcoming brand
+desc: Isharvam Villas is a collection of privately managed luxury villas. Explore the properties, check dates and send a booking request in minutes.
+nav: home
+css: home
+scripts: gsap,ScrollTrigger,swiper,home
+---
+<!-- 1. HERO + SIGNATURE: THE VILLA WAKES (day to night, scroll-scrubbed) -->
+<section class="wake hero" id="wake" aria-labelledby="wake-title">
+  <div class="wake__pin">
+    <div class="wake__stage">
+      <svg class="wake__sky" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <rect class="sk-day" width="1200" height="700" fill="url(#sk-day)"/>
+        <rect class="sk-dusk" width="1200" height="700" fill="url(#sk-dusk)" opacity="0"/>
+        <rect class="sk-night" width="1200" height="700" fill="url(#sk-night)" opacity="0"/>
+        <g class="cloud" fill="#fff" opacity=".8"><ellipse cx="240" cy="150" rx="90" ry="20"/><ellipse cx="300" cy="136" rx="60" ry="22"/><ellipse cx="900" cy="110" rx="100" ry="18"/><ellipse cx="960" cy="98" rx="56" ry="20"/><ellipse cx="620" cy="70" rx="70" ry="13"/></g>
+        <g class="stars" fill="#F7F5F0" opacity="0"><circle cx="683" cy="97" r="1.7"/><circle cx="118" cy="57" r="0.9"/><circle cx="768" cy="318" r="0.9"/><circle cx="1059" cy="129" r="0.9"/><circle cx="196" cy="242" r="1.7"/><circle cx="163" cy="143" r="0.9"/><circle cx="1148" cy="237" r="0.9"/><circle cx="1178" cy="83" r="1.1"/><circle cx="146" cy="315" r="1.7"/><circle cx="121" cy="133" r="0.9"/><circle cx="1160" cy="88" r="1.4"/><circle cx="878" cy="93" r="0.9"/><circle cx="651" cy="306" r="1.1"/><circle cx="231" cy="317" r="1.1"/><circle cx="782" cy="69" r="0.9"/><circle cx="1175" cy="50" r="1.1"/><circle cx="1036" cy="292" r="1.7"/><circle cx="663" cy="258" r="1.7"/><circle cx="760" cy="173" r="1.1"/><circle cx="388" cy="144" r="0.9"/><circle cx="634" cy="288" r="1.7"/><circle cx="723" cy="249" r="1.4"/><circle cx="169" cy="80" r="1.7"/><circle cx="357" cy="195" r="1.1"/><circle cx="1021" cy="235" r="0.9"/><circle cx="178" cy="305" r="1.4"/><circle cx="716" cy="199" r="1.7"/><circle cx="954" cy="55" r="0.9"/><circle cx="572" cy="262" r="0.9"/><circle cx="144" cy="178" r="1.7"/><circle cx="602" cy="217" r="1.4"/><circle cx="66" cy="256" r="1.4"/><circle cx="364" cy="332" r="0.9"/><circle cx="1031" cy="50" r="1.1"/><circle cx="608" cy="86" r="1.1"/><circle cx="834" cy="220" r="1.7"/><circle cx="185" cy="105" r="1.7"/><circle cx="842" cy="301" r="1.4"/><circle cx="300" cy="240" r="1.4"/><circle cx="870" cy="203" r="1.7"/><circle cx="492" cy="97" r="0.9"/><circle cx="380" cy="97" r="1.1"/><circle cx="497" cy="26" r="1.7"/><circle cx="393" cy="154" r="1.4"/><circle cx="28" cy="94" r="1.7"/><circle cx="1114" cy="209" r="1.4"/></g>
+        <circle class="moon" cx="1010" cy="120" r="30" fill="#F3F0E2" opacity="0"/>
+      </svg>
+      <svg class="wake__svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Illustration of a villa with a pool. As evening arrives its windows light one by one, then the garden lights and the pool glow.">
+        <defs>
+          <linearGradient id="sk-day" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9FCBE0"/><stop offset="1" stop-color="#F3EEE2"/></linearGradient>
+          <linearGradient id="sk-dusk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#26386A"/><stop offset="1" stop-color="#EFA487"/></linearGradient>
+          <linearGradient id="sk-night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070D1E"/><stop offset="1" stop-color="#1B3358"/></linearGradient>
+          <radialGradient id="halo"><stop offset="0" stop-color="#F2C879" stop-opacity=".75"/><stop offset="1" stop-color="#F2C879" stop-opacity="0"/></radialGradient>
+          <linearGradient id="litg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBE2A6"/><stop offset="1" stop-color="#EDAE55"/></linearGradient>
+          <linearGradient id="pool-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34C1D8"/><stop offset="1" stop-color="#0B7285"/></linearGradient>
+        </defs>
+        <g class="wake__world">
+<path class="f" style="fill:var(--hill)" d="M-1200 566 L-1200 478 C-700 420 -260 492 120 462 S520 392 740 436 S1120 424 1500 478 L2400 452 V566Z"/>
+<path class="f" style="fill:var(--hill2)" d="M-1200 566 L-1200 512 C-600 478 -80 520 300 500 S760 468 1000 500 S1500 500 2400 486 V566Z"/>
+<path class="f" style="fill:var(--ground)" d="M-1200 560 H2400 V5000 H-1200Z"/>
+<path class="f" style="fill:var(--stone)" d="M330 562 L950 562 L992 600 L300 600Z"/>
+<path class="f" style="fill:var(--stone)" d="M590 566 L690 566 L736 700 L466 700Z"/>
+<path class="d th" pathLength="1" d="M590 566 L690 566 L736 700 L466 700Z"/>
+<path class="d th" pathLength="1" d="M572 600 H710 M548 640 H730 M520 680 H744"/>
+<rect class="f" style="fill:var(--trunk)" x="1000" y="470" width="10" height="94" rx="0"/>
+<rect class="d th" pathLength="1" x="1000" y="470" width="10" height="94" rx="0"/>
+<circle class="f" style="fill:var(--leaf1)" cx="1005" cy="432" r="56"/>
+<circle class="d" pathLength="1" cx="1005" cy="432" r="56"/>
+<circle class="f" style="fill:var(--leaf2)" cx="972" cy="458" r="38"/>
+<circle class="d" pathLength="1" cx="972" cy="458" r="38"/>
+<circle class="f" style="fill:var(--leaf2)" cx="1040" cy="456" r="36"/>
+<circle class="d" pathLength="1" cx="1040" cy="456" r="36"/>
+<circle class="f" style="fill:var(--leaf2)" cx="1005" cy="396" r="36"/>
+<circle class="d" pathLength="1" cx="1005" cy="396" r="36"/>
+<ellipse class="f" style="fill:var(--leaf1)" cx="285" cy="486" rx="22" ry="80"/>
+<ellipse class="d" pathLength="1" cx="285" cy="486" rx="22" ry="80"/>
+<path class="d th" pathLength="1" d="M285 420 V560 M274 470 Q285 458 296 470"/>
+<rect class="f" style="fill:var(--stone)" x="330" y="552" width="620" height="10" rx="0"/>
+<rect class="d" pathLength="1" x="330" y="552" width="620" height="10" rx="0"/>
+<rect class="f" style="fill:var(--wall)" x="340" y="448" width="160" height="104" rx="0"/>
+<rect class="d" pathLength="1" x="340" y="448" width="160" height="104" rx="0"/>
+<rect class="f" style="fill:var(--wall)" x="780" y="448" width="160" height="104" rx="0"/>
+<rect class="d" pathLength="1" x="780" y="448" width="160" height="104" rx="0"/>
+<rect class="f" style="fill:var(--wall)" x="500" y="300" width="280" height="252" rx="0"/>
+<rect class="d" pathLength="1" x="500" y="300" width="280" height="252" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="500" y="406" width="280" height="8" rx="0"/>
+<rect class="d" pathLength="1" x="500" y="406" width="280" height="8" rx="0"/>
+<path class="f" style="fill:var(--wall2)" d="M500 300 L640 198 L780 300Z"/>
+<path class="d" pathLength="1" d="M500 300 L640 198 L780 300Z"/>
+<rect class="f" style="fill:var(--chim)" x="728" y="196" width="30" height="66" rx="0"/>
+<rect class="d" pathLength="1" x="728" y="196" width="30" height="66" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="722" y="190" width="42" height="9" rx="0"/>
+<rect class="d" pathLength="1" x="722" y="190" width="42" height="9" rx="0"/>
+<path class="f" style="fill:var(--roof)" d="M458 314 L640 170 L822 314 L800 314 L640 196 L480 314Z"/>
+<path class="d" pathLength="1" d="M458 314 L640 170 L822 314 L800 314 L640 196 L480 314Z"/>
+<path class="f" style="fill:var(--roof2)" d="M500 392 L356 392 L320 454 L500 454Z"/>
+<path class="d" pathLength="1" d="M500 392 L356 392 L320 454 L500 454Z"/>
+<path class="f" style="fill:var(--roof2)" d="M780 392 L924 392 L960 454 L780 454Z"/>
+<path class="d" pathLength="1" d="M780 392 L924 392 L960 454 L780 454Z"/>
+<path class="d th" pathLength="1" d="M492 410 H342 M486 428 H331 M788 410 H938 M794 428 H949"/>
+<path class="f" style="fill:var(--roof2)" d="M582 438 L698 438 L712 456 L568 456Z"/>
+<path class="d" pathLength="1" d="M582 438 L698 438 L712 456 L568 456Z"/>
+<rect class="f" style="fill:var(--trim)" x="592" y="456" width="8" height="98" rx="0"/>
+<rect class="d" pathLength="1" x="592" y="456" width="8" height="98" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="680" y="456" width="8" height="98" rx="0"/>
+<rect class="d" pathLength="1" x="680" y="456" width="8" height="98" rx="0"/>
+<rect class="f" style="fill:var(--wall2)" x="610" y="458" width="60" height="96" rx="0"/>
+<path class="f" style="fill:var(--door)" d="M620 554 V482 Q620 466 640 466 Q660 466 660 482 V554Z"/>
+<path class="d" pathLength="1" d="M620 554 V482 Q620 466 640 466 Q660 466 660 482 V554Z"/>
+<circle class="f" style="fill:#BCA77D" cx="652" cy="520" r="2.4"/>
+<rect class="f" style="fill:var(--trim)" x="598" y="410" width="84" height="6" rx="0"/>
+<rect class="d" pathLength="1" x="598" y="410" width="84" height="6" rx="0"/>
+<rect class="d th" pathLength="1" x="600" y="386" width="80" height="24" rx="0"/>
+<path class="d th" pathLength="1" d="M612 386 V410 M624 386 V410 M636 386 V410 M648 386 V410 M660 386 V410 M672 386 V410"/>
+<rect class="f" style="fill:var(--shutter)" x="506" y="452" width="11" height="76" rx="0"/>
+<rect class="d th" pathLength="1" x="506" y="452" width="11" height="76" rx="0"/>
+<rect class="f" style="fill:var(--shutter)" x="581" y="452" width="11" height="76" rx="0"/>
+<rect class="d th" pathLength="1" x="581" y="452" width="11" height="76" rx="0"/>
+<rect class="f" style="fill:var(--shutter)" x="688" y="452" width="11" height="76" rx="0"/>
+<rect class="d th" pathLength="1" x="688" y="452" width="11" height="76" rx="0"/>
+<rect class="f" style="fill:var(--shutter)" x="763" y="452" width="11" height="76" rx="0"/>
+<rect class="d th" pathLength="1" x="763" y="452" width="11" height="76" rx="0"/>
+<rect class="f" style="fill:var(--shutter)" x="522" y="332" width="11" height="64" rx="0"/>
+<rect class="d th" pathLength="1" x="522" y="332" width="11" height="64" rx="0"/>
+<rect class="f" style="fill:var(--shutter)" x="591" y="332" width="11" height="64" rx="0"/>
+<rect class="d th" pathLength="1" x="591" y="332" width="11" height="64" rx="0"/>
+<rect class="f" style="fill:var(--shutter)" x="678" y="332" width="11" height="64" rx="0"/>
+<rect class="d th" pathLength="1" x="678" y="332" width="11" height="64" rx="0"/>
+<rect class="f" style="fill:var(--shutter)" x="747" y="332" width="11" height="64" rx="0"/>
+<rect class="d th" pathLength="1" x="747" y="332" width="11" height="64" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="516" y="528" width="66" height="6" rx="0"/>
+<rect class="d th" pathLength="1" x="516" y="528" width="66" height="6" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="698" y="528" width="66" height="6" rx="0"/>
+<rect class="d th" pathLength="1" x="698" y="528" width="66" height="6" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="532" y="396" width="60" height="6" rx="0"/>
+<rect class="d th" pathLength="1" x="532" y="396" width="60" height="6" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="688" y="396" width="60" height="6" rx="0"/>
+<rect class="d th" pathLength="1" x="688" y="396" width="60" height="6" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="366" y="530" width="92" height="6" rx="0"/>
+<rect class="d th" pathLength="1" x="366" y="530" width="92" height="6" rx="0"/>
+<rect class="f" style="fill:var(--trim)" x="822" y="530" width="92" height="6" rx="0"/>
+<rect class="d th" pathLength="1" x="822" y="530" width="92" height="6" rx="0"/>
+<g class="win">
+<ellipse class="halo" cx="412.0" cy="502.0" rx="98.0" ry="67.19999999999999" fill="url(#halo)" opacity="0"/>
+<rect class="f" style="fill:var(--glass)" x="372" y="474" width="80" height="56"/>
+<rect class="lit" x="372" y="474" width="80" height="56" fill="url(#litg)" opacity="0"/>
+<path class="lit" d="M372 474 h16.0 v33.6 q-8.0 -6.72 -16.0 -11.200000000000001 Z M452 474 h-16.0 v33.6 q8.0 -6.72 16.0 -11.200000000000001 Z" fill="#E8B96A" opacity="0"/>
+<rect class="d" pathLength="1" x="372" y="474" width="80" height="56"/>
+<path class="d th" pathLength="1" d="M398.6666666666667 474 V530 M425.3333333333333 474 V530 M372 502.0 H452"/>
+</g>
+<g class="win">
+<ellipse class="halo" cx="549.0" cy="490.0" rx="74.9" ry="86.2" fill="url(#halo)" opacity="0"/>
+<rect class="f" style="fill:var(--glass)" x="520" y="452" width="58" height="76"/>
+<rect class="lit" x="520" y="452" width="58" height="76" fill="url(#litg)" opacity="0"/>
+<path class="lit" d="M520 452 h11.600000000000001 v45.6 q-5.800000000000001 -9.12 -11.600000000000001 -15.200000000000001 Z M578 452 h-11.600000000000001 v45.6 q5.800000000000001 -9.12 11.600000000000001 -15.200000000000001 Z" fill="#E8B96A" opacity="0"/>
+<rect class="d" pathLength="1" x="520" y="452" width="58" height="76"/>
+<path class="d th" pathLength="1" d="M549.0 452 V528 M520 490.0 H578"/>
+</g>
+<g class="win">
+<ellipse class="halo" cx="562.0" cy="364.0" rx="68.6" ry="74.8" fill="url(#halo)" opacity="0"/>
+<rect class="f" style="fill:var(--glass)" x="536" y="332" width="52" height="64"/>
+<rect class="lit" x="536" y="332" width="52" height="64" fill="url(#litg)" opacity="0"/>
+<path class="lit" d="M536 332 h10.4 v38.4 q-5.2 -7.68 -10.4 -12.8 Z M588 332 h-10.4 v38.4 q5.2 -7.68 10.4 -12.8 Z" fill="#E8B96A" opacity="0"/>
+<rect class="d" pathLength="1" x="536" y="332" width="52" height="64"/>
+<path class="d th" pathLength="1" d="M562.0 332 V396 M536 364.0 H588"/>
+</g>
+<g class="win">
+<ellipse class="halo" cx="640.0" cy="264.0" rx="51.800000000000004" ry="48.199999999999996" fill="url(#halo)" opacity="0"/>
+<circle class="f" style="fill:var(--glass)" cx="640.0" cy="264.0" r="18.0"/>
+<circle class="lit" cx="640.0" cy="264.0" r="18.0" fill="url(#litg)" opacity="0"/>
+<circle class="d" pathLength="1" cx="640.0" cy="264.0" r="18.0"/>
+<path class="d th" pathLength="1" d="M640.0 246 V282 M622 264.0 H658"/>
+</g>
+<g class="win">
+<ellipse class="halo" cx="640.0" cy="358.0" rx="56.0" ry="67.19999999999999" fill="url(#halo)" opacity="0"/>
+<rect class="f" style="fill:var(--glass)" x="620" y="330" width="40" height="56"/>
+<rect class="lit" x="620" y="330" width="40" height="56" fill="url(#litg)" opacity="0"/>
+<rect class="d" pathLength="1" x="620" y="330" width="40" height="56"/>
+<path class="d th" pathLength="1" d="M640.0 330 V386 M620 348.6666666666667 H660 M620 367.3333333333333 H660"/>
+</g>
+<g class="win">
+<ellipse class="halo" cx="718.0" cy="364.0" rx="68.6" ry="74.8" fill="url(#halo)" opacity="0"/>
+<rect class="f" style="fill:var(--glass)" x="692" y="332" width="52" height="64"/>
+<rect class="lit" x="692" y="332" width="52" height="64" fill="url(#litg)" opacity="0"/>
+<path class="lit" d="M692 332 h10.4 v38.4 q-5.2 -7.68 -10.4 -12.8 Z M744 332 h-10.4 v38.4 q5.2 -7.68 10.4 -12.8 Z" fill="#E8B96A" opacity="0"/>
+<rect class="d" pathLength="1" x="692" y="332" width="52" height="64"/>
+<path class="d th" pathLength="1" d="M718.0 332 V396 M692 364.0 H744"/>
+</g>
+<g class="win">
+<ellipse class="halo" cx="731.0" cy="490.0" rx="74.9" ry="86.2" fill="url(#halo)" opacity="0"/>
+<rect class="f" style="fill:var(--glass)" x="702" y="452" width="58" height="76"/>
+<rect class="lit" x="702" y="452" width="58" height="76" fill="url(#litg)" opacity="0"/>
+<path class="lit" d="M702 452 h11.600000000000001 v45.6 q-5.800000000000001 -9.12 -11.600000000000001 -15.200000000000001 Z M760 452 h-11.600000000000001 v45.6 q5.800000000000001 -9.12 11.600000000000001 -15.200000000000001 Z" fill="#E8B96A" opacity="0"/>
+<rect class="d" pathLength="1" x="702" y="452" width="58" height="76"/>
+<path class="d th" pathLength="1" d="M731.0 452 V528 M702 490.0 H760"/>
+</g>
+<g class="win">
+<ellipse class="halo" cx="868.0" cy="502.0" rx="98.0" ry="67.19999999999999" fill="url(#halo)" opacity="0"/>
+<rect class="f" style="fill:var(--glass)" x="828" y="474" width="80" height="56"/>
+<rect class="lit" x="828" y="474" width="80" height="56" fill="url(#litg)" opacity="0"/>
+<path class="lit" d="M828 474 h16.0 v33.6 q-8.0 -6.72 -16.0 -11.200000000000001 Z M908 474 h-16.0 v33.6 q8.0 -6.72 16.0 -11.200000000000001 Z" fill="#E8B96A" opacity="0"/>
+<rect class="d" pathLength="1" x="828" y="474" width="80" height="56"/>
+<path class="d th" pathLength="1" d="M854.6666666666666 474 V530 M881.3333333333334 474 V530 M828 502.0 H908"/>
+</g>
+<g class="win win--main">
+<ellipse class="halo" cx="640.0" cy="499.0" rx="43.400000000000006" ry="61.5" fill="url(#halo)" opacity="0"/>
+<rect class="f" style="fill:var(--glass)" x="626" y="474" width="28" height="50"/>
+<rect class="lit" x="626" y="474" width="28" height="50" fill="url(#litg)" opacity="0"/>
+<rect class="d" pathLength="1" x="626" y="474" width="28" height="50"/>
+<path class="d th" pathLength="1" d="M640.0 474 V524 M626 490.6666666666667 H654 M626 507.3333333333333 H654"/>
+</g>
+<rect class="f" style="fill:var(--stone)" x="596" y="554" width="88" height="7" rx="0"/>
+<rect class="d" pathLength="1" x="596" y="554" width="88" height="7" rx="0"/>
+<rect class="f" style="fill:var(--stone)" x="588" y="561" width="104" height="7" rx="0"/>
+<rect class="d" pathLength="1" x="588" y="561" width="104" height="7" rx="0"/>
+<circle class="f" style="fill:var(--leaf1)" cx="358" cy="546" r="19"/>
+<circle class="d th" pathLength="1" cx="358" cy="546" r="19"/>
+<circle class="f" style="fill:var(--leaf2)" cx="392" cy="549" r="14"/>
+<circle class="d th" pathLength="1" cx="392" cy="549" r="14"/>
+<circle class="f" style="fill:var(--leaf1)" cx="470" cy="549" r="13"/>
+<circle class="d th" pathLength="1" cx="470" cy="549" r="13"/>
+<circle class="f" style="fill:var(--leaf2)" cx="572" cy="544" r="14"/>
+<circle class="d th" pathLength="1" cx="572" cy="544" r="14"/>
+<circle class="f" style="fill:var(--leaf2)" cx="708" cy="544" r="14"/>
+<circle class="d th" pathLength="1" cx="708" cy="544" r="14"/>
+<circle class="f" style="fill:var(--leaf1)" cx="812" cy="549" r="13"/>
+<circle class="d th" pathLength="1" cx="812" cy="549" r="13"/>
+<circle class="f" style="fill:var(--leaf2)" cx="890" cy="548" r="15"/>
+<circle class="d th" pathLength="1" cx="890" cy="548" r="15"/>
+<circle class="f" style="fill:var(--leaf1)" cx="924" cy="545" r="19"/>
+<circle class="d th" pathLength="1" cx="924" cy="545" r="19"/>
+<path class="d th" pathLength="1" d="M500 600 V646 M1076 642 V680 M296 570 V610"/>
+<rect class="f" style="fill:var(--stone)" x="728" y="600" width="340" height="84" rx="14"/>
+<rect class="d th" pathLength="1" x="728" y="600" width="340" height="84" rx="14"/>
+<rect class="f" style="fill:url(#pool-g)" x="741" y="612" width="314" height="60" rx="8"/>
+<rect class="d th" pathLength="1" x="741" y="612" width="314" height="60" rx="8"/>
+<rect class="poollit" x="741" y="612" width="314" height="60" rx="8" fill="#8FE9F5" opacity="0"/>
+<g class="pool-lines" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity="0"><path d="M770 630 q18 -5 36 0 t36 0"/><path d="M900 650 q18 -5 36 0 t36 0"/><path d="M810 662 q14 -4 28 0 t28 0"/></g>
+<g class="xlights" opacity="0">
+<circle cx="604" cy="490" r="22" fill="url(#halo)"/><circle cx="604" cy="490" r="3.6" fill="#F2C879"/>
+<circle cx="676" cy="490" r="22" fill="url(#halo)"/><circle cx="676" cy="490" r="3.6" fill="#F2C879"/>
+<circle cx="500" cy="596" r="26" fill="url(#halo)"/><circle cx="500" cy="596" r="3.6" fill="#F2C879"/>
+<circle cx="1076" cy="638" r="26" fill="url(#halo)"/><circle cx="1076" cy="638" r="3.6" fill="#F2C879"/>
+<circle cx="296" cy="566" r="26" fill="url(#halo)"/><circle cx="296" cy="566" r="3.6" fill="#F2C879"/>
+<circle cx="588" cy="459" r="2.8" fill="#F2C879"/>
+<circle cx="604" cy="459" r="2.8" fill="#F2C879"/>
+<circle cx="620" cy="459" r="2.8" fill="#F2C879"/>
+<circle cx="636" cy="459" r="2.8" fill="#F2C879"/>
+<circle cx="652" cy="459" r="2.8" fill="#F2C879"/>
+<circle cx="668" cy="459" r="2.8" fill="#F2C879"/>
+<circle cx="684" cy="459" r="2.8" fill="#F2C879"/>
+<circle cx="350" cy="456" r="2.4" fill="#F2C879"/>
+<circle cx="380" cy="456" r="2.4" fill="#F2C879"/>
+<circle cx="410" cy="455" r="2.4" fill="#F2C879"/>
+<circle cx="440" cy="454" r="2.4" fill="#F2C879"/>
+<circle cx="470" cy="453" r="2.4" fill="#F2C879"/>
+<circle cx="790" cy="456" r="2.4" fill="#F2C879"/>
+<circle cx="820" cy="456" r="2.4" fill="#F2C879"/>
+<circle cx="850" cy="457" r="2.4" fill="#F2C879"/>
+<circle cx="880" cy="458" r="2.4" fill="#F2C879"/>
+<circle cx="910" cy="459" r="2.4" fill="#F2C879"/>
+<circle cx="940" cy="459" r="2.4" fill="#F2C879"/>
+</g>
+        </g>
+      </svg>
+      <div class="wake__reveal"><img src="assets/img/site/cover.webp" srcset="assets/img/site/cover-sm.webp 900w, assets/img/site/cover.webp 2000w" sizes="100vw" alt="A modern villa with a private pool and shaded terrace" width="2000" height="1333" decoding="async"><div class="wake__welcome"><p class="eyebrow">Welcome</p><p class="serif wake__welcome-t">Your villa is <em>ready.</em></p><a class="btn btn--primary btn--lg" href="villas.html" tabindex="-1">Discover the villas</a></div></div>
+    </div>
+    <div class="container wake__copy">
+      <div class="wake__top">
+        <p class="eyebrow hero__eyebrow">Privately managed villas</p>
+        <h1 id="wake-title" class="display hero__title"><span class="line"><span>Come home</span></span><span class="line"><span>to the <em>light.</em></span></span></h1>
+        <p class="hero__lead">One collection, one team, many houses: from quiet forest retreats to pool villas by the water. Choose your dates and we will take care of the rest.</p>
+        <div class="hero__cta"><a class="btn btn--primary btn--lg" href="villas.html">Discover the villas {{arrow}}</a></div>
+        <p class="wake__cap" data-cap aria-live="polite">Daylight: a quiet house, waiting.</p>
+      </div>
+<div class="hero__bar">
+    <form class="bookbar hero__book" data-bookbar action="search.html" method="get" aria-label="Search villas">
+      <div class="bookbar__field"><label for="hb-loc">Where</label><select id="hb-loc" name="loc"><option value="">All locations</option></select></div>
+      <div class="bookbar__field"><button type="button" class="bookbar__btn" data-dates aria-haspopup="dialog" aria-expanded="false"><span class="bookbar__lbl">Check-in</span><span class="val" data-in>Add date</span></button></div>
+      <div class="bookbar__field"><button type="button" class="bookbar__btn" data-dates aria-haspopup="dialog" aria-expanded="false"><span class="bookbar__lbl">Check-out</span><span class="val" data-out>Add date</span></button></div>
+      <div class="bookbar__field"><button type="button" class="bookbar__btn" data-guests><span class="bookbar__lbl">Guests</span><span class="val">2 guests</span></button></div>
+      <div class="bookbar__field bookbar__submit"><button class="btn btn--primary" type="submit">Search villas {{arrow}}</button></div>
+      <input type="hidden" name="in"><input type="hidden" name="out"><input type="hidden" name="g" value="2">
+    </form>
+  </div>
+
+    </div>
+    <div class="wake__prog" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+
+<!-- 2. INTRO -->
+<section class="section atm-day intro" aria-labelledby="story-title">
+  <div class="container">
+    <div class="intro__grid">
+      <div><p class="eyebrow" data-reveal>The Isharvam idea</p>
+      <h2 id="story-title" data-reveal style="--d:.05s">A house is at its best when someone has <em>left the lights on.</em></h2></div>
+      <div><p class="lead" data-reveal style="--d:.1s">One collection of private villas, run by one team. No marketplace, no middlemen: just a house that is ready, and people who know it well.</p>
+      <a class="link-arrow" href="about.html" data-reveal style="--d:.15s">About Isharvam {{arrow}}</a></div>
+    </div>
+    <ul class="pillars">
+      <li data-reveal><span class="serif">01</span><h3>One team, every villa</h3><p>The same standard wherever you stay.</p></li>
+      <li data-reveal style="--d:.06s"><span class="serif">02</span><h3>Privacy first</h3><p>Your pool, your garden, your evenings.</p></li>
+      <li data-reveal style="--d:.12s"><span class="serif">03</span><h3>A direct conversation</h3><p>Request online, confirm with us on WhatsApp.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. FEATURED VILLAS -->
+<section class="section atm-day featured" aria-labelledby="feat-title">
+  <div class="container">
+    <header class="sec-head"><div><p class="eyebrow" data-reveal>Featured villas</p><h2 id="feat-title" data-reveal style="--d:.05s">Houses with a <em>point of view.</em></h2></div><a class="link-arrow" href="villas.html" data-reveal>All villas {{arrow}}</a></header>
+    <div class="featured__grid" id="featured-grid" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- 4. EXPERIENCES -->
+<section class="section atm-day exp" aria-labelledby="exp-title">
+  <div class="container">
+    <header class="sec-head"><div><p class="eyebrow" data-reveal>Experiences</p><h2 id="exp-title" data-reveal style="--d:.05s">Slow days, <em>well kept.</em></h2></div><a class="link-arrow" href="experiences.html" data-reveal>All experiences {{arrow}}</a></header>
+    <div class="exp__grid" id="exp-grid"></div>
+  </div>
+</section>
