@@ -18,5 +18,5 @@
 @media (min-width: 1000px) { .vlayout { grid-template-columns: minmax(0, 1fr) 400px; gap: clamp(3rem, 6vw, 6rem); align-items: start; } .vbook { position: sticky; top: calc(var(--header-h) + 1.25rem); } }
 .similar { display: grid; gap: 2.5rem 2rem; } @media (min-width: 760px) { .similar { grid-template-columns: repeat(3, 1fr); } }
 .mbar { position: fixed; z-index: 85; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .8rem var(--gutter); background: var(--ivory); border-top: 1px solid var(--line); box-shadow: 0 -10px 30px -12px rgba(10, 21, 40, .25); transition: transform .4s var(--ease-out); } .mbar.is-off { transform: translateY(110%); } @media (min-width: 1000px) { .mbar { display: none; } }
-@media (max-width: 999px) { .vbody ~ .section + .mbar, .wa-float { bottom: 78px; } .demo-pill { bottom: 78px; } }
+@media (max-width: 999px) { body:has(.mbar) .wa-float { bottom: calc(84px + env(safe-area-inset-bottom)); } }
 .lb__thumbs { display: flex; gap: .5rem; overflow-x: auto; padding-bottom: .3rem; } .lb__thumbs button { flex: none; opacity: .55; border: 1px solid transparent; transition: opacity .2s; } .lb__thumbs button[aria-current="true"] { opacity: 1; border-color: var(--lamp); } .lb__thumbs img { width: 84px; height: 56px; object-fit: cover; } .lb img[src] { background: var(--navy); }

@@ -1,0 +1,48 @@
+/* ISHARVAM VILLAS: mobile & touch refinements (loaded last on every public page) */
+html { -webkit-text-size-adjust: 100%; }
+a, button, label, select, summary, [role="button"] { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+
+/* safe areas on notched phones */
+.site-header { padding-top: env(safe-area-inset-top); }
+.wa-float { right: max(14px, env(safe-area-inset-right)); bottom: max(14px, env(safe-area-inset-bottom)); }
+.mbar { padding-bottom: calc(.8rem + env(safe-area-inset-bottom)); }
+
+@media (max-width: 759px) {
+  /* never trigger iOS focus-zoom */
+  input, select, textarea { font-size: 16px !important; }
+  select, input:not([type="checkbox"]):not([type="radio"]) { min-height: 48px; }
+
+  /* comfortable touch targets (44px) */
+  .site-footer a, .footer__legal a, .site-footer__bottom a { display: inline-flex; align-items: center; min-height: 44px; padding-inline: .35rem; }
+  .link-arrow { min-height: 44px; }
+  .chip, .chips .chip { min-height: 44px; padding-inline: 1.1rem; }
+  .btn--sm, .btn--text { min-height: 44px; }
+  label:has(input[type="checkbox"]), label:has(input[type="radio"]), .check, .compare { min-height: 44px; display: inline-flex; align-items: center; gap: .6rem; }
+  input[type="checkbox"], input[type="radio"] { width: 22px; height: 22px; }
+
+  /* swipeable rows on the home page instead of long stacks */
+  .featured__grid, .exp__grid { display: flex !important; overflow-x: auto; gap: 1rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; margin-inline: calc(var(--gutter) * -1); padding: .25rem var(--gutter) 1rem; }
+  .featured__grid::-webkit-scrollbar, .exp__grid::-webkit-scrollbar { display: none; }
+  .featured__grid > *, .exp__grid > * { flex: 0 0 80%; max-width: 80%; scroll-snap-align: center; margin: 0 !important; grid-column: auto !important; }
+  .exp__grid .exp__tile { min-height: 0; aspect-ratio: 4 / 5; }
+  .featured__grid .vcard { --ar: 4 / 5; }
+
+  /* calmer vertical rhythm */
+  .section { padding-block: clamp(2.5rem, 9vw, 3.5rem); }
+  h1 { text-wrap: balance; }
+  .btn--lg, .btn--primary { min-height: 52px; }
+  .page-head { padding-bottom: 3.5rem; }
+
+  /* the floating chat button should never cover a primary action */
+  .wa-float { width: 48px; height: 48px; padding: 0; justify-content: center; }
+  .wa-float span { display: none; }
+}
+
+/* very small phones */
+@media (max-width: 360px) {
+  .site-header .btn--primary, .nav__cta { display: none; }
+  .vcard__meta, .vcard__foot { flex-wrap: wrap; }
+}
+
+/* landscape phones: keep the pinned hero from trapping the scroll */
+@media (max-height: 480px) and (orientation: landscape) { .wake__pin { min-height: 0; } }

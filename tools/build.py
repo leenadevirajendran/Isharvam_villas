@@ -17,7 +17,7 @@ def build(path, admin):
     for line in fm.strip().splitlines():
         k, _, v = line.partition(':'); m[k.strip()] = v.strip()
     root = '../' if admin else ''; scripts = [s for s in m.get('scripts', '').split(',') if s]
-    css = ['base', 'components', 'pages'] + (['ambient'] if not admin else ['admin']) + [c for c in m.get('css', '').split(',') if c]
+    css = ['base', 'components', 'pages'] + (['ambient'] if not admin else ['admin']) + [c for c in m.get('css', '').split(',') if c] + ([] if admin else ['mobile'])
     css_html = ''.join('<link rel="stylesheet" href="%sassets/css/%s.css">\n' % (root, c) for c in css if os.path.exists(os.path.join(ROOT, 'assets/css/%s.css' % c)))
     if 'swiper' in scripts: css_html += '<link rel="stylesheet" href="%sassets/vendor/swiper-bundle.min.css">\n' % root
     d = dict(root=root, title=m.get('title', 'Isharvam Villas'), desc=m.get('desc', 'Privately managed luxury villas.'), css=css_html, logo=P['logo-mark'].strip(), arrow=ARROW,
